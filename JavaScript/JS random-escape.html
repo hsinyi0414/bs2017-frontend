@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <pre><script>
+            // 在這裡填入你的 JavaScript 的測試程式
+            // document.writeln() 類似 C# 的 Console.WriteLine()
+            // prompt() 類似 C# 的 Console.ReadLine()
+
+            var run=true;
+            var count=0;
+
+            while(run){
+                var r = Math.floor(Math.random()*10);
+                //Math.floor小數點無條件捨去
+                //Math.random()只取0-1裡面的亂數所以要*10
+                count += 1;
+
+                document.writeln("執行"+count+"次：取出亂數"+ r);
+
+                if(r==5){
+                    run=false;
+                }
+            }
+        </script></pre>
+    </body>
+</html>
